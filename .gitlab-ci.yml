@@ -11,6 +11,7 @@ eslint:
  # What scripts do we want to run?
  script:
     # install eslint
-    - npm install
+    # - npm install
+    - npm --proxy http://jurosutantra:41455108@cache.itb.ac.id:8080 install
     - node_modules\.bin\eslint *.js --fix
     - node_modules\.bin\eslint *.jsx --fix
