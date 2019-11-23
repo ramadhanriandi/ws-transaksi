@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const response = require('./res');
 const connection = require('./conn');
 
@@ -19,7 +20,7 @@ exports.createTransaction = function (req, res) {
   const {
     virtualAccount, movieId, historyDate, historyTime, chair, userId,
   } = req.query;
-  
+
   const currentTime = new Date();
   const createdAt = `${currentTime.getFullYear()}-${currentTime.getMonth() + 1}-${currentTime.getDate()} ${currentTime.getHours()}:${currentTime.getMinutes()}:${currentTime.getSeconds()}`;
 
@@ -29,7 +30,6 @@ exports.createTransaction = function (req, res) {
       if (error) {
         console.log(error);
       } else {
-        //response.successPost(result.insertId, res);
         response.successPost(result.insertId, res);
       }
     });
