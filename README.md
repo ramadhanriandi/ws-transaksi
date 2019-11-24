@@ -5,14 +5,14 @@ Web service transaksi ini dibangun dengan menggunakan Node.js dan mengimplementa
 
 ## Basis Data yang Digunakan Web Service
 Web service ini menggunakan database MySQL untuk menyimpan daftar transaksi pembelian film. Nama database yang dibuat adalah movie_transaction dan tabel yang dimiliki hanya satu yaitu transactions. Berikut ini adalah detail atribut dari tabel transactions.
- Field           | Type        | Null | Key | Default | Extra          
------------------|-------------|------|-----|---------|----------------
- transactionID   | int(11)     | NO   | PRI | NULL    | auto_increment 
- virtual_account | varchar(50) | NO   |     | NULL    |                
- movie_id        | int(11)     | NO   |     | NULL    |                
- historyDate     | date        | NO   |     | NULL    |                
- historyTime     | varchar(11) | NO   |     | NULL    |                
- chair           | int(11)     | NO   |     | NULL    |                
- created_at      | datetime    | NO   |     | NULL    |                
- status          | varchar(10) | YES  |     | Pending |                
- user_id         | int(11)     | NO   |     | NULL    |                
+| Field | Type | Null | Key | Default | Extra |          
+|-------|------|------|-----|---------|-------|
+| transactionID | int(11) | NO | PRI | NULL | auto_increment |
+| virtual_account | varchar(50) | NO | | NULL | |                
+| movie_id | int(11) | NO | | NULL | |                
+| historyDate | date | NO | | NULL | |                
+| historyTime | varchar(11) | NO | | NULL | |                
+| chair | int(11) | NO | | NULL | |                
+| created_at | datetime | NO | | NULL | |           
+| status | varchar(10) | YES | | Pending | |                
+| user_id | int(11) | NO | | NULL | |                
