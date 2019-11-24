@@ -1,4 +1,3 @@
-
 # ws-transaksi
 
 ## Deskripsi Web Service
@@ -18,3 +17,7 @@ Web service ini menggunakan database MySQL untuk menyimpan daftar transaksi pemb
 | created_at        | datetime      | NO    |       | NULL      |               |           
 | status            | varchar(10)   | YES   |       | Pending   |               |                
 | user_id           | int(11)       | NO    |       | NULL      |               |       
+
+### Praktik Pengembangan Perangkat Lunak
+1.  Gitflow Workflow: 13517044, 13517080, 13517113
+2.  Eksplorasi dan setup mesin deployment: 13517044, 13517080, 13517113
