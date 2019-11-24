@@ -22,3 +22,6 @@ Web service ini menggunakan database MySQL untuk menyimpan daftar transaksi pemb
 1.  Gitflow Workflow: 13517044, 13517080, 13517113
 2.  Eksplorasi dan setup mesin deployment: 13517044, 13517080, 13517113
 3.  CI/CD 13517080
+
+### URL AWS
+ec2-54-92-160-89.compute-1.amazonaws.com:5000
