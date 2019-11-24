@@ -21,3 +21,4 @@ Web service ini menggunakan database MySQL untuk menyimpan daftar transaksi pemb
 ### Praktik Pengembangan Perangkat Lunak
 1.  Gitflow Workflow: 13517044, 13517080, 13517113
 2.  Eksplorasi dan setup mesin deployment: 13517044, 13517080, 13517113
+3.  CI/CD 13517080
