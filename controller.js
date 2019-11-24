@@ -18,14 +18,14 @@ exports.findAllUserTransaction = function (req, res) {
 
 exports.createTransaction = function (req, res) {
   const {
-    virtualAccount, movieId, historyDate, historyTime, chair, userId,
+    virtualAccount, movieId, historyDate, historyTime, scheduleID, chair, userId,
   } = req.query;
 
   const currentTime = new Date();
   const createdAt = `${currentTime.getFullYear()}-${currentTime.getMonth() + 1}-${currentTime.getDate()} ${currentTime.getHours()}:${currentTime.getMinutes()}:${currentTime.getSeconds()}`;
 
-  connection.query('INSERT INTO transactions (virtual_account, movie_id, historyDate, historyTime, chair, created_at, user_id) values (?, ?, ?, ?, ?, ?, ?)',
-    [virtualAccount, movieId, historyDate, historyTime, chair, createdAt, userId],
+  connection.query('INSERT INTO transactions (virtual_account, movie_id, historyDate, historyTime, scheduleID, chair, created_at, user_id) values (?, ?, ?, ?, ?, ?, ?, ?)',
+    [virtualAccount, movieId, historyDate, historyTime, scheduleID, chair, createdAt, userId],
     (error, result) => {
       if (error) {
         console.log(error);
@@ -36,10 +36,10 @@ exports.createTransaction = function (req, res) {
 };
 
 exports.updateTransaction = function (req, res) {
-  const { transaction_id, status } = req.body;
+  const { transactionID, status } = req.query;
 
-  connection.query('UPDATE transactions SET status = ? WHERE transaction_id = ?',
-    [status, transaction_id],
+  connection.query('UPDATE transactions SET status = ? WHERE transactionID = ?',
+    [status, transactionID],
     (errorUpdate) => {
       if (errorUpdate) {
         console.log(errorUpdate);
